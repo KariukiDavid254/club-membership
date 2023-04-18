@@ -8,16 +8,16 @@ button[type="submit"] {
 
   form {
     display:inline-table;
-    height: 350px;
-    width: 250px;
+    height: 450px;
+    width: 350px;
     background-color: rgb(0, 0, 0);
     margin: 2rem;
-    padding: 20px;
-    border: 1px solid #cccccc6e;
+    padding: 10px;
+    border: 1px solid #0000006e;
       border-radius: 20px;
-      background-color: #2b2a2965;
-      box-shadow: 0 7px 10px 0 rgba(80, 67, 193, 0.915);
-      position: relative;
+      background-color: #ff800065;
+      box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.915);
+      object-position: 50%;
     justify-content: center;
 
   }
@@ -33,5 +33,46 @@ button[type="submit"] {
     box-sizing:border-box
   }
   
+  nav {
+    font-display: inline;
+    justify-content: end;
+  }
 
+   /* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  
+}
 
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: start;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #303030;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 1000px) {
+  .navbar a {
+    float: inline-start;
+    display: block;}
+  }
+img{
+  width: 100%;
+  height: 100%;
+}
